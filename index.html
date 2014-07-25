@@ -1,26 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Game 1</title>
-		<script type="text/javascript" src="phaser.min.js"></script>
-		<script type="text/javascript" src="entity/player.js"></script>
-		<script type="text/javascript" src="entity/faxMachine.js"></script>
-		<script type="text/javascript" src="entity/sharks.js"></script>
-		<script type="text/javascript" src="entity/papers.js"></script>
-		<script type="text/javascript" src="state/load.js"></script>
-		<script type="text/javascript" src="state/gameover.js"></script>
-		<script type="text/javascript" src="state/play.js"></script>
-		<script type="text/javascript" src="game.js"></script>
+		<title>Squidboy</title>
+		<script type="text/javascript" src="swfobject.js"></script>
+		
+		<script type="text/javascript">
+			swfobject.embedSWF("Squidboy.swf", "gamediv", "800", "400", "12.0.0");
+		</script>
 		
 		<style type="text/css">
-			#gamediv {
-				width: 800px;
-				height: 400px;
-				margin: auto;
-			}
+			#gamediv{position:absolute;width:800px;height:400px;left:0;right:0;top:0;bottom:0;margin:auto;}
 		</style>
 	</head>
 	<body>
-		<div id="gamediv"></div>
+		<div id="gamediv">
+			<p>OOPS! Game didn't load :[</p>
+		</div>
 	</body>
 </html>
