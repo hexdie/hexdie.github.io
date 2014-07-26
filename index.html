@@ -3,11 +3,6 @@
 	<head>
 		<title>Squidboy</title>
 		<script type="text/javascript" src="swfobject.js"></script>
-		
-		<script type="text/javascript">
-			swfobject.embedSWF("Squidboy.swf", "gamediv", "800", "400", "12.0.0");
-		</script>
-		
 		<style type="text/css">
 			#gamediv{position:absolute;width:800px;height:400px;left:0;right:0;top:0;bottom:0;margin:auto;}
 		</style>
@@ -16,5 +11,10 @@
 		<div id="gamediv">
 			<p>OOPS! Game didn't load :[</p>
 		</div>
+		<script type="text/javascript">
+			window.onload = function(){
+				swfobject.embedSWF("Squidboy.swf", "gamediv", "800", "400", "12.0.0");
+			};
+		</script>
 	</body>
 </html>
