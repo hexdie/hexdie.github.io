@@ -1,33 +1,86 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<style type="text/css">
-			.object-container{text-align:center;margin: 30px 0;}
-			body{background-color:lightslategray;color: white;font-family: sans-serif;}
-			.title-paragraph{text-align: center;font-size: 20px;margin-top: 20px;}
-			.controls-container{width:640px;display:inline-block;text-align:left;}
-			.center-text{text-align:center;}
-		</style>
-	</head>
-	<body>
-		<p class="title-paragraph">
-			Early preview build of Dfragmente
-		</p>
-		<div class="object-container">
-			<object id="swfobject" type="application/x-shockwave-flash" data="Dfragmente.swf" width="640" height="480"></object>
-		</div>
-		<div class="center-text">
-			<div class="controls-container">
-				<div>
-					Controls:
-				</div>
-				<div>
-					<ul>
-						<li>LEFT, and RIGHT to move (or A and D)</li>
-						<li>UP, W, or SPACE to jump</li>
-						<li>DOWN or S to enter doors</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+        <script src="/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <title>hexdie</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="site-nav navbar navbar-default navbar-fixed-top hidden-xs">
+    <div class="container-fluid">
+        <div class="col-xs-12">
+        	<ul class="nav navbar-nav">
+	        	<li>
+	        		<div class="hexdie-logo">
+	        			hexdie
+	        		</div>
+	        	</li>
+	            <!-- <li><a href="/">Home</a></li> -->
+	            <li><a href="/games">Games</a></li>
+	            <li><a href="/about">About</a></li>
+	        </ul>
+	        <ul class="nav navbar-nav social-icon-list">
+	        	<li>
+	        		<a href="https://twitter.com/hexdie">
+	        			<img src="/img/twitter-icon.png" />
+	        		</a>
+	        	</li>
+	        	<li>
+	        		<a href="http://hexdie.itch.io/">
+	        			<img src="/img/itch-icon.png" />
+	        		</a>
+	        	</li>
+	        	<li>
+	        		<a href="https://soundcloud.com/hexdie">
+	        			<img src="/img/soundcloud-icon.png" />
+	        		</a>
+	        	</li>
+	        	<li>
+	        		<a href="http://hexdie.bandcamp.com/">
+	        			<img src="/img/bandcamp-icon.png" />
+	        		</a>
+	        	</li>
+	        </ul>
+        </div>
+    </div>
+</div>
+
+<div class="site-nav navbar navbar-default navbar-fixed-top visible-xs">
+    <div class="container-fluid">
+        <div class="col-xs-12">
+        	<ul class="nav navbar-nav">
+	        	<li>
+	        		<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+						<div class="hexdie-logo">
+							hexdie
+						</div>
+						<button class="dropdown-button">
+							<span class="glyphicon glyphicon-chevron-down closed-content" style="padding-top:4px;"></span>
+							<span class="glyphicon glyphicon-chevron-up opened-content"></span>
+						</button>
+				    </a>
+	        		<ul class="dropdown-menu" role="menu">
+			            <li><a href="/games">Games</a></li>
+			            <li><a href="/about">About</a></li>
+		        	</ul>
+	        	</li>
+	        </ul>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-xs-12">
+                <script type="text/javascript">
+	location.href = "/games";
+</script>
+            </div>
+        </div>
+        <script src="/js/flash-detect.js" type="text/javascript"></script>
+    </body>
 </html>
